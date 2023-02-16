@@ -1,0 +1,21 @@
+CS 21 Lab 3
+
+Name: Samira Begum
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 1.5
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 3
+
+
+Describe the biggest challenge you faced on this lab:
+
+        I kept making small sytax errors with my parentheses since this lab required a lot of type conversion. Figuring out where/when to start running a loop was also somewhat difficult but it became clearer as it went along. I didn't find this lab as techinically difficult but it definitely required more thought that the other labs so far.
+

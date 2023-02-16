@@ -1,0 +1,21 @@
+CS 21 Lab 1
+
+Name: Samira Begum
+
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 1
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 2
+
+
+Describe the biggest challenge you faced on this lab:
+
+The biggest challenge I faced on this lab was getting user input to work for the fixme.py program. It didn't take me long to fix since I used the intro.py program as a base for how user input worked.

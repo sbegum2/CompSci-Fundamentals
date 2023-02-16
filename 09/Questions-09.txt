@@ -1,0 +1,25 @@
+CS 21 Lab 9
+
+Name: Samira Begum
+
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 6
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 4.5
+
+
+Describe the biggest challenge you faced on this lab:
+        The biggest challenge with this lab was interpreting the lab write-up.
+        I was trying to run my searches without using the HydroDam record
+        class as I didn't understand that it should be used in both the
+        searches and printing. When I figured out how to use the given 
+        resources, the lab made more sense.
+

@@ -1,0 +1,164 @@
+"""
+
+  The Game of Melty
+
+  Samira Begum
+  March 2022
+"""
+from random import *
+
+def main():
+
+    #1
+    printIntro()
+    
+    #2
+    randList = generateWord()
+
+    #3
+    guessList = list(len(randList)*"-")
+    print(guessList)
+    
+    #4
+    guessesLeft = 8
+
+    randList = list(randList)
+    print(randList)              #test
+  
+    win = 0
+    print(guessesLeft)
+    while (guessesLeft > 0 or win == 0):
+
+        win = wordGuessed(randList, guessList)
+
+        userInput = getGuess(randList)
+
+        correctGuess = compareGuess(randList, guessList, userInput)
+     
+        incorrect = determineInc(correctGuess, guessesLeft, guessList) 
+        
+        if incorrect == False:
+            guessesLeft = guessesLeft - 1
+            
+        print("Incorrect guesses left: " + str(guessesLeft))
+
+    if (guessesLeft == 0):
+        if (win == 1):
+            print("You won! The word was " + randList + "! You saved Melty! :)")
+        else:
+            print("Oh no! The word was " + randList + ", but you couldn't \
+                    guess it in time to save Melty :(")
+
+#######################################
+
+def printIntro():
+
+    print("\n  This program plays a game of Melty. \n  \n  Guess letters in the mystery word. \n  You can only make 8 incorrect guesses before \n  Melty melts.  See if you can save Melty and \n  guess the word before you run out of guesses. \n \n                  Good Luck! \n")
+
+########################################
+
+def generateWord():
+    """
+    params: wordfile.txt
+    returns: randomly selected word, converted into a list of single letter 
+     strings
+    """
+
+    wordfile = open("/usr/local/doc/wordfile.txt", "r")
+    randList = wordfile.readlines()    
+    
+    word = choice(randList)
+    word = word.strip()
+    word.split()
+
+    return word
+
+#########################################
+
+def determineInc(correctGuess, guessesLeft, guessList):
+    """
+    params: incorrect guesses left, guesslist
+    returns: guessesLeft
+    
+    function determines if a guess should be subtracted from the 8 given
+    guesses.
+    """
+    
+    if (correctGuess == 0):        
+        return False
+
+    return True
+
+#########################################
+
+def getGuess(randList):
+    """
+    params: randList 
+    returns: guess
+    
+    function gets user input of a single character string and checks if string
+    is single character and alphabetical
+    """
+
+    guess = input("Enter a letter: ")
+    print(" ")
+    
+    while not(guess.isalpha() and guess.islower() and len(guess) == 1):
+        print("Hey, that's not a single lowercase letter!")
+        guess = input("Enter a letter: ")
+        print(" ")
+
+    print(guess)
+    return guess
+
+#########################################
+
+def compareGuess(randList, guessList, userInput):
+    """
+    params: randList, guessList, userInput
+    return: correct guess variable. = 1 if userinput was in randlist, 
+     = 0 otherwise
+    
+    compares userInput at each index to randList to check if the letter at that
+    position is equal to the guessed letter. If so, sets correctGuess to 1 
+    because guess was correct at least once, and mutates guessList at the 
+    corresponding index without returning list
+    """
+
+    correctGuess = 0
+    for i in range(len(randList)):
+        if (randList[i] == userInput):
+            guessList[i] = userInput
+            correctGuess = 1
+            print("  good guess, '" + userInput + "' is in the word")
+    
+    if (correctGuess != 1):
+        print("sorry there is no '" + userInput + "' in the word")
+    print(" ")
+    print(guessList)                                                    
+
+    return correctGuess
+
+##########################################
+
+def wordGuessed(randList, guessList):
+    """
+    params: guessList, randList
+    returns: guessed variable = 1 if word guessed = 0 if not
+    
+    compares mutated guessList to randList in order to determine if all 
+    characters in the random list have been guessed
+    """
+    
+    wordGuessed = 0
+    charGuessed = 0
+    for i in range(len(randList)):
+        if (randList[i] == guessList[i]):
+            charGuessed = charGuessed + 1
+    if (charGuessed == len(randList)):
+        wordGuessed = 1
+
+    return wordGuessed
+
+###########################################
+main()

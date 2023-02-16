@@ -1,0 +1,59 @@
+"""
+  flowers.py 
+
+  Samira Begum
+  March 2022
+"""
+
+from graphics import *
+
+def main():
+
+    #across = input("Enter number of white flowers across: ")
+    
+    win = GraphWin("Flowers", 800, 800)
+    win.setBackground((color_rgb(191, 245, 198)))
+    
+    make_flower(win)
+
+
+def make_flower(win):
+
+    #flower center
+    p1 = Point(400,400)
+    C1 = Circle(p1,80)
+    C1.setFill("gold")
+    C1.setOutline("gold")
+
+    #blue petal 1
+    p2 = Point(300,300)
+    bluePetal1 = Circle(p2, 150)
+    bluePetal1.setFill("turquoise3")
+    bluePetal1.setOutline("turquoise3")
+
+    #blue petal 2
+    p3 = Point(500,500)
+    bluePetal2 = Circle(p3, 150)
+    bluePetal2.setFill("turquoise3")
+    bluePetal2.setOutline("turquoise3")
+
+    #white petal 1
+    p4 = Point(500,400)
+    whitePetal1 = Circle(p4, 150)
+    whitePetal1.setFill("white")
+    whitePetal1.setOutline("white")
+
+    #arranging order 
+    whitePetal1.draw(win)
+    #whitePetal2.draw(win)
+    bluePetal1.draw(win)
+    bluePetal2.draw(win)
+    C1.draw(win)
+
+    win.getMouse()
+    win.close()
+
+#def draw_flower(win, row, col):
+
+
+main()

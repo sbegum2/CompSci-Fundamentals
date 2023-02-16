@@ -1,0 +1,23 @@
+CS 21 Lab 4
+
+Name: Samira Begum
+
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 2.5
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 4
+
+
+Describe the biggest challenge you faced on this lab:
+        The biggest challenge in this lab was using the cumulation of skills and
+        commands we learned throughout the course for these programs. I didn't 
+        remember indexing or the command but knew I needed a command like it
+        for the purpose of olympics.py and eventually got there.

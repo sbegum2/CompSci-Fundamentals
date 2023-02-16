@@ -1,0 +1,22 @@
+CS 21 Lab 10
+
+Name: Samira Begum
+
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 5
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 5
+
+
+Describe the biggest challenge you faced on this lab:
+        This lab was challening in the sense that so much of it was based off of        the last lab. I find it easier to start from scratch so going back and
+        editing was challenging.
+

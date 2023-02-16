@@ -1,0 +1,23 @@
+CS 21 Lab 12
+
+Name:
+
+
+Approximately how many hours did you take to complete this lab?
+Provide your answer as a single integer (or float) on the "hours:"
+line below.
+
+hours: 7
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+difficulty: 5 
+
+
+Describe the biggest challenge you faced on this lab:
+    I didn't know to call my methods and class functions. 
+    While I successfully created the class I wasn't sure how to use it.
+
+
